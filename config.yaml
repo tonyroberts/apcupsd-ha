@@ -11,6 +11,7 @@ init: false
 image: "ghcr.io/twasilczyk/apcupsd-ha-{arch}"
 codenotary: codenotary@wasilczyk.pl
 apparmor: true
+usb: true
 # auth_api is not needed, used just to bump rating to 8. We can't use ingress setting, because that
 # one would cause undesired side effects (UI changes to expose web UI, which we don't have).
 auth_api: true
