@@ -1,14 +1,13 @@
 name: "apcupsd"
 description: "Power Management daemon for Ethernet-connected APC UPS"
 url: "https://github.com/twasilczyk/apcupsd-ha"
-version: "1.0.0"
+version: "1.0.1"
 slug: "apcupsd"
 ports:
   3551/tcp: 3551
 ports_description:
   3551/tcp: Network Information Server (NIS) port
 init: false
-image: "ghcr.io/twasilczyk/apcupsd-ha-{arch}"
 codenotary: codenotary@wasilczyk.pl
 apparmor: false
 usb: true
