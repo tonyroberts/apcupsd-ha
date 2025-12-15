@@ -74,5 +74,6 @@ profile apcupsd flags=(attach_disconnected,mediate_deleted) {
     /dev/console w,
     /etc/apcupsd/apcupsd.conf r,
     /run/apcupsd.pid rw,
+    /run/apcupsd/** rw,
   }
 }

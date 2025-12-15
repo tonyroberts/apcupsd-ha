@@ -21,11 +21,13 @@ arch:
   - armv7
   - i386
 options:
+  upstype: snmp
   deviceaddr: ''
   deviceport: 161
   snmpcommunity: 'public'
   polltime: 60
 schema:
+  upstype: list(snmp|usb)
   deviceaddr: str
   deviceport: port
   snmpcommunity: str
