@@ -1,7 +1,7 @@
 ARG BUILD_FROM=error
 FROM $BUILD_FROM
 
-#LABEL org.opencontainers.image.source=https://github.com/tonyroberts/apcupsd-ha
+LABEL org.opencontainers.image.source=https://github.com/tonyroberts/apcupsd-ha
 EXPOSE 3551/tcp
 CMD [ "/sbin/apcupsd-wrapper.sh" ]
 
